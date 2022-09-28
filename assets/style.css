@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #5e9693;
+  margin: 0 auto 2rem;
+}
+
+ul {
+  --bs-navbar-color: #fff;
+}
+
+#main-title, #second-title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1rem;
+}
+
+#main-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#second-title {
+  font-weight: .5rem;
+}
+
+.nav-link, .navbar-brand, #contact-btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#projects, #about, #contact {
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#nv:hover {
+  color: #5e9693
+}
+
+#contact-btn:hover {
+  background-color: #5e9693;
+  border: none;
+/*   color: #fff; */
+}
+
+#name, #emailAddress, #message, #submit-btn {
+  font-family: 'Montserrat', sans-serif;
+}
