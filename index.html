@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/7f8900a18e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script defer src="./app.js"></script>
     <title>Brian Sanchez</title>
 </head>
 <body>
@@ -212,33 +213,45 @@
   <div class='container-fluid col-lg-6'>
     <div class='card mb-5 shadow'>
       <div class='card-body'>
-      <form action='https://getform.io/f/e8b42a78-78e1-4bb4-9114-2cc23b941aa1' id="contactForm" method="POST">
+      <form class="needs-validation" action='https://getform.io/f/e8b42a78-78e1-4bb4-9114-2cc23b941aa1' id="contactForm" method="POST"  novalidate>
 
     <!-- Name input -->
-    <div class="mb-3">
-      <label class="form-label" for="name" style="font-family: 'Montserrat', sans-serif;">Name</label>
-      <input class="form-control" id="name" type="text" placeholder="Name" name='name' required/>
-    </div>
+            <div class="mb-3 was-validated">
+                <label class="form-label" for="name" style="font-family: 'Montserrat', sans-serif;">Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" name='name' required/>
+                    <div class="valid-feedback">Name looks good!</div>
+                    <div class="invalid-feedback">
+                        Please enter your name
+                    </div>
+            </div>
 
-    <!-- Email address input -->
-    <div class="mb-2">
-      <label class="form-label" for="emailAddress" style="font-family: 'Montserrat', sans-serif;">Email Address</label>
-      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" name='email' required />
-    </div>
+            <!-- Email address input -->
+            <div class="mb-2 was-validated">
+                <label class="form-label" for="emailAddress" style="font-family: 'Montserrat', sans-serif;">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" name='email' required />
+                <div class="valid-feedback">Email address looks good!</div>
+                    <div class="invalid-feedback">
+                        Please enter your email address
+                    </div>
+            </div>
 
-    <!-- Message input -->
-    <div class="mb-3">
-      <label class="form-label" for="message" style="font-family: 'Montserrat', sans-serif;">Message</label>
-      <textarea class="form-control" id="message" type="text" placeholder="Message" name='message' style="height: 10rem;" required></textarea>
-    </div>
+            <!-- Message input -->
+            <div class="mb-3 was-validated">
+                <label class="form-label" for="message" style="font-family: 'Montserrat', sans-serif;">Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message" name='message' style="height: 10rem;" required></textarea>
+                    <div class="valid-feedback">Message looks good!</div>
+                    <div class="invalid-feedback">
+                        Please enter a message
+                    </div>
+            </div>
 
-    <!-- Form submit button -->
-    <div class="mb-3">
-      <button class="btn btn-primary btn-lg" id="submit-btn" style="background-color: #5e9693; border: none;" type="submit">Submit</button>
-    </div>
+            <!-- Form submit button -->
+            <div class="mb-3">
+                <button class="btn btn-primary btn-lg" id="submit-btn" style="background-color: #5e9693; border: none;" type="submit">Submit</button>
+            </div>
 
-  </form>
-      </div>
+        </form>
+        </div>
       </div>
   </div>
   
