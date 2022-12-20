@@ -60,7 +60,7 @@ ul {
   font-family: 'Montserrat', sans-serif;
 }
 
-#projects, #about, #contact {
+#projects, #skills, #contact, #resume {
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -77,4 +77,8 @@ ul {
 
 #name, #emailAddress, #message, #submit-btn {
   font-family: 'Montserrat', sans-serif;
+}
+
+#p-icons {
+  font-size: 50px;
 }
